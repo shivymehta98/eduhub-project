@@ -1,0 +1,101 @@
+.card, .card-title{
+    text-align: center;
+    font-family: helvatica;
+}
+h4{
+    font-size: 20px;
+}
+
+.card{
+    padding-bottom: 20px;
+    margin-top: 40px;
+
+}
+p[_ngcontent-c5][_ngcontent-c5], span[_ngcontent-c5][_ngcontent-c5] {
+    padding-left: 60px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.card-body{
+    margin-left: 10px;
+}
+.card-text{
+    margin-top:30px;
+}
+.card-text  li{
+    padding-left: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.btn {
+    padding: 10px 60px;
+    border: 0 none;
+    font-weight: 600;
+    height:100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #e05a2b;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #e05a2b;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #e05a2b;
+    box-shadow: none;
+}
+ul {
+    list-style: none;
+  }
+  
+ 
+  .con-title h2 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+.con-title h2 span {
+    font-size: 30px;
+}
+p, li, a, span, table, tr, td, th, label {
+    font-size: 17px;
+    color: #636363;
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
+    text-align: justify;
+}
+
+p {
+    margin: 0px -27px -11px;
+}
+.s18-age-event ul li h4{
+margin-left: 150px;
+}
+.s18-age-event ul li p {
+    padding-top: 0px;
+    font-size: 16px;
+}
+.s18-age-event[_ngcontent-c5] ul[_ngcontent-c5] li[_ngcontent-c5] p[_ngcontent-c5] {
+    padding-top: 0px;
+    font-size: 16px;
+    margin-left: 150px;
+}
+p[_ngcontent-c5] {
+    margin: 1px -24px -12px 0px;
+}
+.cor-p7-revi input[type="submit"] {
+    margin-bottom: 84px;
+}
+p[_ngcontent-c5], span[_ngcontent-c5] {
+
+    padding-left: 60px;
+}
