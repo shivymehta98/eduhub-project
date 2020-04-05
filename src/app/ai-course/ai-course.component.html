@@ -1,0 +1,103 @@
+<vg-player >
+  <vg-controls>
+      <vg-play-pause></vg-play-pause>
+      <vg-playback-button></vg-playback-button>
+
+      <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+
+      <vg-scrub-bar>
+          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+          <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+      </vg-scrub-bar>
+
+      <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+
+      <vg-mute></vg-mute>
+      <vg-volume></vg-volume>
+
+      <vg-fullscreen></vg-fullscreen>
+  </vg-controls>
+
+  <video #media
+  [vgMedia]="media"
+  [src]="currentItem.src"
+  id="singleVideo"
+  preload="auto"
+  crossorigin>
+  <track kind="subtitles" label="English" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en" default>
+</video>
+
+</vg-player>
+<!-- <div class="nav-collapse fx-jsb"><div class="nav-container"><ul data-purpose="course-experience-navbar" class="nav nav-tabs"><li role="presentation" class=""><a data-purpose="overview-tab" href="javascript:void(0)" [routerLink]="['/ai']">Overview</a></li><li role="presentation" class="active"><a data-purpose="content-tab" href="javascript:void(0)">Course Content</a></li><li role="presentation" class=""><a data-purpose="questions-tab" href="javascript:void(0)">Q&amp;A</a></li><li role="presentation" class=""><a data-purpose="announcements-tab" href="javascript:void(0)">Announcements</a></li></ul></div></div> -->
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a [routerLink]="['/ai']" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
+    <li role="presentation"><a href="#course-content" aria-controls="course-content" role="tab" data-toggle="tab">Course Content</a></li>
+    <li role="presentation"><a href="#qa" aria-controls="qa" role="tab" data-toggle="tab">Q & A</a></li>
+    <li role="presentation"><a href="#announcements" aria-controls="announcements" role="tab" data-toggle="tab">Announcements</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+      <div role="tabpanel"  class="tab-pane active" id="course-content">
+          <div class="container">
+              <div class="card">
+                                       
+                      <div class="card-title">Section 1</div>
+                        <div class="embed-responsive embed-responsive-16by9">
+              <ul>
+                     
+              
+                      <li *ngFor="let item of playlist; let $index = index"
+                          (click)="onClickPlaylistItem(item, $index)"
+                          [class.selected]="item === currentItem" >
+                          <i class="fa fa-play" aria-hidden="true"></i>
+                          {{ item.title }}
+                      </li>
+                    </ul></div></div></div>
+                   
+              <div class="container">
+                <div class="card">
+                                         
+                        <div class="card-title">Section 2</div>
+                          <div class="embed-responsive embed-responsive-16by9">
+                <ul>
+                       
+                
+                        <li *ngFor="let item of playlist; let $index = index"
+                            (click)="onClickPlaylistItem(item, $index)"
+                            [class.selected]="item === currentItem" >
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                            {{ item.title }}
+                        </li>
+                      </ul></div></div></div>
+                   
+              <div class="container">
+                <div class="card">
+                                         
+                        <div class="card-title">Section 3</div>
+                          <div class="embed-responsive embed-responsive-16by9">
+                <ul>
+                       
+                
+                        <li *ngFor="let item of playlist; let $index = index"
+                            (click)="onClickPlaylistItem(item, $index)"
+                            [class.selected]="item === currentItem" >
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                            {{ item.title }}
+                        </li>
+                      </ul></div></div></div>
+                       
+              
+      </div>
+
+    <div role="tabpanel" class="tab-pane" id="qa">
+  
+    </div>
+    <div role="tabpanel" class="tab-pane" id="announcements">announcements</div>
+  </div>
+
+</div>
+        
