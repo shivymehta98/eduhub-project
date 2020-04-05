@@ -26,6 +26,7 @@
               "src/styles.css",
               "node_modules/videogular2/fonts/videogular.css",
               "node_modules/ngx-toastr/toastr.css"
+         
             ],
             "scripts": []
           },
@@ -125,8 +126,5 @@
       }
     }
   },
-  "defaultProject": "eduhub-project",
-  "cli": {
-    "analytics": "6642cb19-f55b-4c01-8a01-29d8d55bb754"
-  }
+  "defaultProject": "eduhub-project"
 }
